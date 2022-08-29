@@ -141,13 +141,38 @@
                 </p>
             </section>
         </section>
-
-        <form>
-            <h3>
-                Information Request
-            </h3>
-        </form>
-
+        <section>
+            <h2>
+            Information Request
+            </h2>
+            <form> 
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name"> 
+                </div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email"> 
+                <p>
+                    Contact area
+                </p>
+                <div>
+                    <input type="radio" id="hr department" name="contact area" value="HR department">
+                    <label for="hr department">HR department</label>
+                </div>
+                <div>
+                    <input type="radio" id="systems" name="contact area" value="Systems">
+                    <label for="systems">Systems</label>
+                </div>
+                <div>
+                    <input type="radio" id="commercialization" name="contact area" value="Commercialization">
+                    <label for="commercialization">Commercialization</label>
+                </div>
+                <div>
+                    <label for="message">Message</label>
+                    <textarea name="message"></textarea>
+                </div>
+            </form>
+        </section>
         <section>
             <h2>
                 History
