@@ -4,61 +4,71 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz8..144display=swap');
+        </style>
+        <link rel="stylesheet" href="./Css/reset.css">
+        <link rel="stylesheet" href="./Css/style.css">        
         <title>Trackgenix</title>
     </head>
     <body>
         <header>
-            <h1>
+            <nav>
+                <aside>
+                    <p class="navbar-item-1">
+                        <img src="assets/home-1.svg" alt="Icon Home">
+                        <a href="#">Home</a> 
+                    </p>
+                    <p class="navbar-item-2">
+                        <img src="assets/user-question.svg" alt="Icon Userq">
+                        <a href="#">Sign Up</a>
+                    </p>
+                    <p class="navbar-item-3">
+                        <img src="assets/user-1.svg" alt="Icon User">
+                        <a href="#">Log In</a>
+                    </p>
+                    <p class="navbar-item-4">
+                        <img src="assets/chevron-circle-right.svg" alt="Icon Chevron">
+                        <a href="#">Contact</a>
+                    </p>
+                    <p class="navbar-item-5">
+                        <img src="assets/phone.svg" alt="Icon Phone">
+                        <a href="#">(000)000-0000</a>
+                    </p>
+                    <p class="navbar-item-6">
+                        <img src="assets/mail.svg" alt="Icon Mail">
+                        <a href="#">trackgenixsupp@rr.com</a>
+                    </p>
+                </aside>
+            </nav>
+        </header>
+        <head>
+            <h1 id="main-title">
                 Trackgenix
             </h1>
-        </header>
-        <aside>
-            <nav>
-                <p>
-                    <img src="assets/home-1.svg" alt="Icon Home">
-                    <a href="#">Home</a>
-                </p>
-                <p>
-                    <img src="assets/user-question.svg" alt="Icon Userq">
-                    <a href="#">Sign Up</a>
-                </p>
-                <p>
-                    <img src="assets/user-1.svg" alt="Icon User">
-                    <a href="#">Log In</a>
-                </p>
-                <p>
-                    <img src="assets/chevron-circle-right.svg" alt="Icon Chevron">
-                    <a href="#">Contact</a>
-                </p>
-                <p>
-                    <img src="assets/phone.svg" alt="Icon Phone">
-                    <a href="#">(000)000-0000</a>
-                </p>
-                <p>
-                    <img src="assets/mail.svg" alt="Icon Mail">
-                    <a href="#">trackgenixsupp@rr.com</a>
-                </p>
-            </nav>
-        </aside>
+        </head>
+        <div id="main-container">
         <main>
-            <h2>
+            <div class="container">
+                <h2>
                 A tool designed to improve productivity and work managment
-            </h2>
-            <section>
-               <img src="Assets/Picture.jpg" alt="Imagen principal"> 
-            </section>
-            <article>
-                <p>
-                A tool designed to improve productivity and work managment
-                Sometimes working with large groups of people
-                can be difficult.
-                </p>
-                <p>
-                Trackgenix is a system created to make things
-                easier in cases like that and accomplish your goals
-                </p>
-                in the easiest and fastest way.
-            </article>
+                </h2>
+                <section>
+                <img src="Assets/Picture.jpg" alt="Imagen principal"> 
+                </section>
+                <article>
+                    <p>
+                    A tool designed to improve productivity and work managment
+                    Sometimes working with large groups of people
+                    can be difficult.
+                    </p>
+                    <p>
+                    Trackgenix is a system created to make things
+                    easier in cases like that and accomplish your goals
+                    </p>
+                    in the easiest and fastest way.
+                </article>
+            </div>
         </main>
         <section>
             <h2>
@@ -343,6 +353,7 @@
                 <p>
                     <input type="submit" value="Continue">
                 </p>
-        </section>      
+        </section>
+        </div>       
     </body>
 </html>
