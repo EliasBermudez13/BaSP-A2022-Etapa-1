@@ -99,8 +99,7 @@ aside {
     margin-left: 28px;
     margin-bottom: 18px;
     font-size: 16px;
-    font-weight: 400;
-    
+    font-weight: 400;    
 }
 .navbar-item-5 a {
     color: #fff;
@@ -162,6 +161,27 @@ aside {
     margin-top: -28px;
     padding-left: 20px;
     font-size: 32px;
-    color:#000000;
+    color:#000;
     font-weight: bold;
+}
+.article-icon{
+    display: inline-block;
+    width: 15%;
+    margin-left: 415px;
+    padding-top: 38px;
+    padding-right: 0px;
+    text-align: center;
+}
+.cuaternary-title{
+    font-weight: 500;
+    font-size: 24px;
+    color: #000;
+    padding-bottom: 10px;
+}
+.fun-container{
+    position: relative;
+    display: inline-block;
+    width: 185%;
+    margin-left: 85px;
+    margin-top: -65px;
 }
