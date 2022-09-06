@@ -99,7 +99,6 @@
                 <img src="assets/Multiple roles.png" alt="Icon Multiple roles">
             </section>
         </section>
-        <!-- <div id="main-container"> -->
         <section>
             <h2 class="secondary-title">
                 Why using Trackgenix?
@@ -163,35 +162,43 @@
                 </div>
             </article>
         </section>
+        <!-- <div id="main-container"> -->
         <section>
-            <h2>
-            Information Request
+            <h2 class="request-title">
+            Information request
             </h2>
-            <form> 
-                <fieldset>
-                    <label for="name">Name</label>
+            <form class="request-form"> 
+                <fieldset class="form-group">
+                    <label for="name">. Name</label>
                     <input type="text" id="name" name="name">
                 </fieldset> 
-                <fieldset>
-                    <label for="email">Email</label>
+                <fieldset class="form-group">
+                    <label for="email">. Email</label>
                     <input type="email" id="email" name="email"> 
                 </fieldset>
                 <p>
-                    Contact area
-                </p>               
+                    . Contact area
+                </p>
+                <div class="contact-area-container">              
                     <input type="radio" id="hr department" name="contact area" value="HR department">
-                    <label for="hr department">HR department</label>               
+                    <label for="hr department">HR department</label>
+                </div> 
+                <div class="contact-area-container">                
                     <input type="radio" id="systems" name="contact area" value="Systems">
                     <label for="systems">Systems</label>
+                </div>
+                <div class="contact-area-container"> 
                     <input type="radio" id="commercialization" name="contact area" value="Commercialization">
                     <label for="commercialization">Commercialization</label>
-                <fieldset>    
-                    <label for="message">Message</label>
+                </div>
+                <fieldset class="form-group">    
+                    <label for="message" class="label-message">. Message</label>
                     <textarea name="message"></textarea>
                 </fieldset>
+                <input class="button" type="submit" value="Confirm">
             </form>
         </section>
-        <section>
+        <section class="history-container">
             <h2>
                 History
             </h2>
