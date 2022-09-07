@@ -2,7 +2,6 @@ body {
     background-color: #fff;
     font-family:Roboto, Flex, sans-serif;
 }
-
 aside {
     position:fixed;
     float:left;
@@ -14,11 +13,9 @@ aside {
     font-weight: 700;
     background: #FF0000;
 }
-
 a{
     text-decoration: none;
 }
-
 #main-title {
     position: relative;
     margin: 86px;
@@ -34,12 +31,10 @@ a{
     font-size: 42px;
     font-weight: 700;    
 }
-
 #main-container {
     float: right;
     margin-left: 500px;
 }
-
 .button{
     float: right;
     margin-right: 150px ;
@@ -58,7 +53,6 @@ a{
     margin-bottom: 272px;
     padding-right: 80px;
 }
-
 .navbar-item-1 a {
     padding-left: 10px;
     color: #fff;
@@ -138,7 +132,6 @@ a{
     font-style: italic;
     margin-bottom: 86px;
 }
-
 .article-container {
     display: inline-block;
     width: 24%;
@@ -268,7 +261,6 @@ a{
     width: 16px;
     height: 16px;
 }
-
 .history-container {
     float:right;
     margin-top: 8.56px;
@@ -276,7 +268,6 @@ a{
     margin-right: 1px;
     width: 1235px;
     height: 830px;
-    /* background-color: aqua; */
     background-image: url('../Assets/Picture-clock.png');
 }
 .history-title {
@@ -349,4 +340,24 @@ a{
 }
 .nav-container li a {
     color: #747474;
+}
+.main-footer{
+    float: right;
+    width: 1234px;
+    height: 177px;
+    background-color: #FF0000;
+    color: #fff;
+    text-align: center;
+    font-size: 28px;
+    font:normal;
+}
+.main-footer h3 {
+    padding-bottom: 15px;
+}
+.main-footer nav a {
+    padding-left: 100px;
+    margin-right: 20px;
+}
+.main-footer nav img{
+    width: 7%;;
 }
