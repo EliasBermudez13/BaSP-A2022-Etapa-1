@@ -1,0 +1,27 @@
+body {
+    background-color: #fff;
+    font-family:Roboto, Flex, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.button{
+    float: right;
+    margin-right: 150px ;
+    margin-top: 10px;
+    background-color: #FF0000;
+    color: #fff;
+    padding: 10px 15px;
+    width: 260px;
+    height:40.64px;
+    border:none;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 480px){
+    aside{
+        display: none;
+    }
+}

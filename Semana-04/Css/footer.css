@@ -1,0 +1,20 @@
+.main-footer{
+    float: right;
+    width: 1234px;
+    height: 177px;
+    background-color: #FF0000;
+    color: #fff;
+    text-align: center;
+    font-size: 28px;
+    font:normal;
+}
+.main-footer h3 {
+    padding-bottom: 15px;
+}
+.main-footer nav a {
+    padding-left: 100px;
+    margin-right: 20px;
+}
+.main-footer nav img{
+    width: 7%;;
+}
