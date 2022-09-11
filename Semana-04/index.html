@@ -15,12 +15,8 @@
         <title>Trackgenix</title>
     </head>
     <body>
-        <!-- <header>
-            <nav>
-                <section class="hamburger-menu">
-                    <img src="assets/icons8-menu-30.png" alt="Icon Menu">
-                </section>
-                <aside>
+        <header>
+                <aside class="desktop-sidebar">
                     <p class="navbar-item-1">
                         <img src="assets/home-1.svg" alt="Icon Home">
                         <a href="#">Home</a> 
@@ -46,11 +42,30 @@
                         <a href="#">trackgenixsupp@rr.com</a>
                     </p>
                 </aside>
+                <aside class="mobile-sidebar">
+                    <div class="column-1">
+                        <p class="navbar-item-1">
+                            <img src="assets/home-1.svg" alt="Icon Home">
+                            <a href="#">Home</a> 
+                        </p>
+                        <p class="navbar-item-4">
+                            <img src="assets/chevron-circle-right.svg" alt="Icon Chevron">
+                            <a href="#">Contact</a>
+                        </p>        
+                    </div>
+                    <div class="column-2">
+                        <p class="navbar-item-2">
+                            <a href="#">Sign Up</a>
+                        </p>
+                        <p class="navbar-item-3">
+                            <a href="#">Log In</a>
+                        </p>
+                    </div>
+                </aside>
             </nav>
-        </header> -->
+        </header>
         <main class="main-home-container">
             <div class="title-icon-menu">
-                <img src="assets/icons8-menu-30.png" alt="Icon Menu">
                 <h1 id="main-title">
                     Trackgenix
                 </h1>
@@ -65,49 +80,43 @@
                         <p>
                             Sometimes working with large groups of people
                             can be difficult.
-                        </p>
-                        <p>
                             Trackgenix is a system created to make things
                             easier in cases like that and accomplish your
-                        <p>     
-                            goals
-                        </p>
-                        <p>
-                            in the easiest and fastest way.
+                            goals in the easiest and fastest way.
                         </p>
                     </div>
                 </article>
             </div>
-            <!-- <section >
+            <section class="functionalites" >
                 <h2 class="secondary-title">
                     Functionalities
                 </h2>
-                <section class="funcionalities-container">
+                <section class="funcionalities-container">   
+                    <img src="assets/Record hours.png" alt="Icon Record hours">
                     <h3 class="terciary-title">
                         Record hours
                     </h3>
-                    <img src="assets/Record hours.png" alt="Icon Record hours">
                 </section>
                 <section class="funcionalities-container">
+                    <img src="assets/Reports.png" alt="Icon Reports">
                     <h3 class="terciary-title">
                         Reports
                     </h3>
-                    <img src="assets/Reports.png" alt="Icon Reports">
                 </section>
                 <section class="funcionalities-container">
+                    <img src="assets/Resourse management.png" alt="Icon Resourse management">
                     <h3 class="terciary-title">
                         Resource management
                     </h3>
-                    <img src="assets/Resourse management.png" alt="Icon Resourse management">
                 </section>
                 <section class="funcionalities-container">
+                    <img src="assets/Multiple roles.png" alt="Icon Multiple roles">
                     <h3 class="terciary-title">
                         Multiple roles
-                    </h3>
-                    <img src="assets/Multiple roles.png" alt="Icon Multiple roles">
+                    </h3>   
                 </section>
             </section>
-            <section>
+            <section class="why-using-trackgenix">
                 <h2 class="secondary-title">
                     Why using Trackgenix?
                 </h2>
@@ -119,11 +128,7 @@
                         </h4>
                         <p> 
                             Increase everyone's performance by keeping track
-                        </p>
-                        <p> 
                             tasks, hours worked, progress made & more in an 
-                        </p>
-                        <p>
                             organized and time effective manner.
                         </p> 
                     </div>
@@ -135,9 +140,7 @@
                             Work Traceability
                         </h4>
                         <p>
-                            Organize and keep track of your work
-                        </p>
-                        <p>   
+                            Organize and keep track of your work   
                             from anywhere. 
                         </p>
                     </div>
@@ -149,7 +152,7 @@
                             Leadership & Team Management
                         </h4>
                         <p>
-                            Manage your team's effort by assigning new proyects,
+                            Manage your team's effort by assigning new proyects
                             setting deadlines, roles , and hourly rates for the 
                             members of your team.
                         </p>
@@ -163,14 +166,12 @@
                         </h4>    
                         <p> 
                             Improve your decisión making by having 
-                        </p>
-                        <p>
                             access to this valuable information at any time.   
                         </p>
                     </div>
                 </article>
             </section>
-            <section>
+            <section class="form">
                 <h2 class="request-title">
                 Information request
                 </h2>
@@ -183,29 +184,33 @@
                         <label for="email">. Email</label>
                         <input type="email" id="email" name="email"> 
                     </fieldset>
-                    <p>
-                        . Contact area
-                    </p>
-                    <div class="contact-area-container">              
-                        <input type="radio" id="hr department" name="contact area" value="HR department">
-                        <label for="hr department">HR department</label>
-                    </div> 
-                    <div class="contact-area-container">                
-                        <input type="radio" id="systems" name="contact area" value="Systems">
-                        <label for="systems">Systems</label>
+                    <div class="contact-area">
+                        <p>
+                            . Contact area
+                        </p>
+                        <div class="contact-area-inputs">
+                            <div class="contact-area-container">              
+                                <input type="radio" id="hr department" name="contact area" value="HR department">
+                                <label for="hr department">HR department</label>
+                            </div> 
+                            <div class="contact-area-container">                
+                                <input type="radio" id="systems" name="contact area" value="Systems">
+                                <label for="systems">Systems</label>
+                            </div>
+                            <div class="contact-area-container"> 
+                                <input type="radio" id="commercialization" name="contact area" value="Commercialization">
+                                <label for="commercialization">Commercialization</label>
+                            </div>
+                        </div>
                     </div>
-                    <div class="contact-area-container"> 
-                        <input type="radio" id="commercialization" name="contact area" value="Commercialization">
-                        <label for="commercialization">Commercialization</label>
-                    </div>
-                    <fieldset class="form-group">    
+                    <fieldset class="form-text">    
                         <label for="message" class="label-message">. Message</label>
                         <textarea name="message"></textarea>
                     </fieldset>
                     <input class="button" type="submit" value="Confirm">
                 </form>
             </section>
-            <section>
+            <!--<section>
                 <div>
                     <h2 class="history-title">
                         History

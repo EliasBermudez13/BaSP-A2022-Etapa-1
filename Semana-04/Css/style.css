@@ -8,20 +8,28 @@ a{
 }
 
 .button{
-    float: right;
-    margin-right: 150px ;
-    margin-top: 10px;
+    align-self: end;
+    margin-right: 7%;
+    margin-top: 20px;
+    margin-bottom: 50px;
     background-color: #FF0000;
     color: #fff;
     padding: 10px 15px;
-    width: 260px;
+    width: 42%;
     height:40.64px;
     border:none;
     border-radius: 5px;
 }
 
-@media only screen and (max-width: 480px){
-    aside{
+@media screen and (max-width: 1024px) {
+    .desktop-sidebar{
         display: none;
-    }
+    }  
 }
+
+@media screen and (min-width: 1024px){
+    aside.mobile-sidebar{
+        display: none;
+    }   
+}
+
