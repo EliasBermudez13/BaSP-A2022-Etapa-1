@@ -442,6 +442,7 @@
 .list-nav{
     display: flex;
     flex-direction: column-reverse;
+    margin-bottom: 20%;
 }
 
 .nav-title{
