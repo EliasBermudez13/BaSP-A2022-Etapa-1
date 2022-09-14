@@ -32,7 +32,9 @@ a{
     aside.desktop-sidebar{
         display: flex;
     } 
-    
+    main.container{
+        display: flex;
+    }
 }
 
 
