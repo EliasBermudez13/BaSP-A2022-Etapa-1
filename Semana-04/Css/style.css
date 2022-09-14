@@ -21,15 +21,18 @@ a{
     border-radius: 5px;
 }
 
-@media screen and (max-width: 1024px) {
-    .desktop-sidebar{
-        display: none;
-    }  
-}
+
+
 
 @media screen and (min-width: 1024px){
     aside.mobile-sidebar{
         display: none;
-    }   
+    }
+  
+    aside.desktop-sidebar{
+        display: flex;
+    } 
+    
 }
+
 

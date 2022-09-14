@@ -30,6 +30,7 @@
     padding-top: 40px;
     margin-bottom: 200px;
 }
+
 .img1 { 
     width: 70%;
     padding-left: 15%;
@@ -42,34 +43,6 @@
     justify-content: space-around;
     align-items: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .secondary-title {
@@ -120,9 +93,6 @@
 
 
 
-
-
-
 .why-using-trackgenix{
     display: flex;
     flex-direction: column;
@@ -158,14 +128,6 @@
     padding-left: 149px;
     margin-bottom: 180px; */
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -253,9 +215,9 @@
 
 .contact-area-inputs {
     display: flex;
-    flex:1;
     flex-direction: column;
-    align-items: left;
+    flex-basis: 50%;
+    /* align-items: left; */
     /* margin-right: 8%;
     padding-right: 4%; */
     /* border: #000 solid 2px; */
@@ -335,6 +297,8 @@
     /* height: 830px; */
     height: 680px;
     background-image: url('../Assets/Picture-clock.png');
+    background-size: cover;
+    background-position: center;
 }
 .history-title {
     display: flex;
@@ -397,7 +361,7 @@
   align-items: center;
   width: 90%;
   align-self: center;
-  margin-bottom: 50%;
+  margin-bottom: 25%;
   background-color: #FF5454 ;      
 }
 
