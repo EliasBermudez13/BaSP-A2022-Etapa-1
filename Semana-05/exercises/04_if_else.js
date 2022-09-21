@@ -38,5 +38,5 @@ else if ((Age >= 61) && (Age <= 75)){
     alert('Older adult');
 }
 else{
-    alert('Elderly')
+    alert('Elderly');
 }
