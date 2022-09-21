@@ -40,7 +40,8 @@
     display: flex;
     background-color: #FF0000;
     justify-content: space-around;
-    align-items: center;
+    align-items: center;    
+    margin-top: 100px;
 }
 .secondary-title {
     display: flex;
