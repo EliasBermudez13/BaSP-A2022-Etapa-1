@@ -2,6 +2,11 @@
 This is a web app made to facilitate work organization in a I.T. company.
 
 ## How to open:
+### Exercises of Javascript:
+```
+https://eliasbermudez13.github.io/BaSP-A2022-Etapa-1/Semana-05/
+```
+### Flexbox css week-04:
 ```
 https://eliasbermudez13.github.io/BaSP-A2022-Etapa-1/Semana-04/
 ```
@@ -22,6 +27,8 @@ We work with html to create the landing page.
 The styles folder was made with css, with the aim that the index.html be equal to the landing page of the figma screenflow
 ## Week 04
 Working with flexbox to make the phone and tablet aplication.
+## Week 05
+Fixing things on flexbox last week feedback, and made exercises with Javascript.
 
 ## Authors
-- Elias Bermudez
+- Elias Bermudez.
