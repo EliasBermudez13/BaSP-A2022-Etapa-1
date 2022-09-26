@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="../Styles/footer.css">
         <link rel="stylesheet" href="../Styles/login.css">        
         <title>Trackgenix</title>
+        <script src="../Javascript/login.js"></script>
     </head>
     <body>
         <header>
@@ -21,13 +22,13 @@
                 <div class="sidebar-container">
                     <p class="navbar-item-1">
                         <img src="../Assets/home-1.svg" alt="Icon Home">
-                        <a href="#">Home</a> 
+                        <a href="index.html">Home</a> 
                     </p>
                 </div>
                 <div class="sidebar-container">
                     <p class="navbar-item-2">
                         <img src="../Assets/user-question.svg" alt="Icon Userq">
-                        <a href="#">Sign Up</a>
+                        <a href="./sign-up.html">Sign Up</a>
                     </p>
                     <p class="navbar-item-3">
                         <img src="../Assets/user-1.svg" alt="Icon User">
@@ -67,17 +68,22 @@
                     <form class="login-form">
                         <div>
                             <img src="../Assets/Username.png" alt="IconUsername">
-                            <input type="text" id="name" name="name" placeholder="Username">
+                            <input id="username" type="text" name="name" placeholder="Username">
                         </div>
                         <div>
                             <img src="../Assets/Password.png" alt="">
-                            <input type="password" id="password" name="password" placeholder="Password">
-                        </div>
-                        <div class="checkbox">
-                            <input type="checkbox" id="remember-me" name="remember" value="Rememberme">
-                            <label for="remember me"> Remember me</label>
+                            <input id="password" type="password"  name="password" placeholder="Password">
                         </div>
                     </form>
+                    <div class="checkbox">
+                        <input type="checkbox" id="remember-me" name="remember" value="Rememberme">
+                        <label for="remember me" class="label1"> Remember me</label>
+                    </div>
+                    <div class="login-a">
+                        <a href="../Views/sign-up.html" class="a-signup">Register here</a>
+                        <a href="Forgotyourpaswordpage">Forgot your password?</a>
+                    </div>
+                    <input class="button-Continue" type="submit" value="Log In">
                 </section>
             </div>
         </main>
