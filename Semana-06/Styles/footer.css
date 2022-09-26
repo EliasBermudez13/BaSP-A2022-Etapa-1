@@ -1,10 +1,11 @@
-.main-footer{
+footer{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 82%;
     background-color: #FF0000;
     color: #fff;
     text-align: center;
+    margin-left: 18%;
     font-size: 12px;
     font:normal;
 }
@@ -13,10 +14,11 @@
     justify-content: space-around;
     padding-top: 2%;
 }
-.main-footer h3 {
+
+footer h3 {
     padding-top: 3%;
     padding-bottom: 2%;
 }
-.main-footer nav img{
-    width: 35%;
+footer nav img{
+    width: 40%;
 }

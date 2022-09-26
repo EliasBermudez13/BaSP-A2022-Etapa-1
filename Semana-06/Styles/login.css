@@ -1,0 +1,50 @@
+main{
+    display: flex;
+    justify-content: center;
+    height: 86%;
+}
+.login-container{
+    display: flex;
+    width: 45%;
+    align-items: center;
+}
+.login-container section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 14px rgba(56, 56, 56, 0.541) ;
+}
+.login-title{
+    padding-top: 40px;
+    font-size: 3em;
+    padding-bottom: 60px;
+}
+.login-container section .login-form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.login-form div{
+    display: flex;
+    padding-top: 50px;
+
+}
+.login-form div input{
+    width: 70%;
+    border: none;
+    border-bottom: 1px solid red;
+}
+.login-form .checkbox{
+    align-self: flex-start;
+}
+.checkbox label{
+    flex-basis: 3;
+}
+.login-form .checkbox #remeber-me{
+    flex-grow: 1;
+}
