@@ -25,7 +25,10 @@ function passwordError() {
     password.parentNode.insertBefore(errorAlert, userEmail.nextElementSibling);
 } 
 numsAndLetters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-function PasswordValidation(pass,type){
+function PasswordValidation(pass,type,min){
+    if (pass.length < min){
+        return (false);
+    }
     var passLength = pass.length;
     for (i = 0; i < passLength; i++){
         caracters = pass[i];
@@ -39,7 +42,7 @@ password.onblur = function (){
     if (password.value == ''){
         passwordError();
     }
-    else if (!PasswordValidation(password.value, numsAndLetters)){
+    else if (!PasswordValidation(password.value, numsAndLetters, 8)){
         passwordError();
     }
     else{
@@ -56,14 +59,14 @@ buttonLogin.onclick = function (e){
     e.preventDefault();
     email = userEmail.value;
     passwordValue = password.value;
-    if (PasswordValidation(passwordValue, numsAndLetters) && emailExpression.test (email)){
+    if (PasswordValidation(passwordValue, numsAndLetters, 8) && emailExpression.test (email)){
         alert('Username: ' + email + ' ' + 'Password: ' + passwordValue);
     }
     else {
         if (!emailExpression.test (email)){
             alert("Invalid Username");
         }
-        if (!PasswordValidation(passwordValue, numsAndLetters)){
+        if (!PasswordValidation(passwordValue, numsAndLetters, 8)){
             alert("Invalid Password");
         }
     }
