@@ -40,6 +40,18 @@ a{
         margin-left: 0%;
         width: 100%;
     }
+    main .signup-container{
+        height: 80%;
+    }
+    main .signup-container section .signup-form div{
+        height: 30%;
+        width: 60%;
+    }
+    main .signup-container section .signup-form{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10%;
+    }
 }
 @media screen and (min-width: 1024px){
     aside.desktop-sidebar{
