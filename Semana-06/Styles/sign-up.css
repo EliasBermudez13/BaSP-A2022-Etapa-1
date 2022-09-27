@@ -55,8 +55,11 @@
 .red-border{
    border: 5px solid red;
 }
-.p{
+p{
    font-size: 12px;
    color: red;
    padding: 5px;
+}
+.hide{
+ display: none;
 }

@@ -22,7 +22,7 @@ var password = document.getElementById('password');
 function passwordError() {
     password.classList.add('red-border');
     errorAlert.innerHTML = 'Error: you must enter a password';
-    password.parentNode.insertBefore(errorAlert, userEmail.nextElementSibling);
+    password.parentNode.insertBefore(errorAlert, password.nextElementSibling);
 } 
 numsAndLetters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 function PasswordValidation(pass,type,min){
@@ -32,11 +32,11 @@ function PasswordValidation(pass,type,min){
     var passLength = pass.length;
     for (i = 0; i < passLength; i++){
         caracters = pass[i];
-        if (numsAndLetters.indexOf(caracters) ==-1){
+        if (numsAndLetters.indexOf(caracters) == -1){
             return (false);
         }
-    return (true);
     }
+    return (true);
 }
 password.onblur = function (){
     if (password.value == ''){
@@ -54,7 +54,6 @@ password.onfocus = function (){
 }
     //Button
 var buttonLogin = document.getElementsByClassName('button-Continue')[0];
-console.log(buttonLogin)
 buttonLogin.onclick = function (e){
     e.preventDefault();
     email = userEmail.value;
