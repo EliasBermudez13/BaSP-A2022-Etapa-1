@@ -2,6 +2,10 @@
 This is a web app made to facilitate work organization in a I.T. company.
 
 ## How to open:
+### Forms with Javascript:
+```
+https://eliasbermudez13.github.io/BaSP-A2022-Etapa-1/Semana-06/
+```
 ### Exercises of Javascript:
 ```
 https://eliasbermudez13.github.io/BaSP-A2022-Etapa-1/Semana-05/
@@ -11,7 +15,7 @@ https://eliasbermudez13.github.io/BaSP-A2022-Etapa-1/Semana-05/
 https://eliasbermudez13.github.io/BaSP-A2022-Etapa-1/Semana-04/
 ```
 ```
-1. Access to the folder "Semana-01"
+1. Access to the folder "Semana-0x"
 2. Open "index.html" in your browser.
 ```
 The system is divided in four roles, SuperAdmin, Admin, Employee Pm, and Employee.
@@ -29,6 +33,7 @@ The styles folder was made with css, with the aim that the index.html be equal t
 Working with flexbox to make the phone and tablet aplication.
 ## Week 05
 Fixing things on flexbox last week feedback, and made exercises with Javascript.
-
+## Week 06
+We work on validations of the inputs in the Sign-up and Log-in forms. Maded with Javascript.
 ## Authors
 - Elias Bermudez.
