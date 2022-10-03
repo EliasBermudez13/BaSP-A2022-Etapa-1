@@ -4,7 +4,7 @@ This is a web app made to facilitate work organization in a I.T. company.
 ## How to open:
 ### Storage and promises:
 ```
-(https://eliasbermudez13.github.io/BaSP-A2022-Etapa-1/Semana-07/views/)
+[here](https://eliasbermudez13.github.io/BaSP-A2022-Etapa-1/Semana-07/views/)
 ```
 ### Forms with Javascript:
 ```
