@@ -1,7 +1,7 @@
 window.onload = function (){
     //firstName validation
 var fName = document.getElementById('first-name');
-var numsAndLetters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+var numsAndLetters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
 var letters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
 var numbers = '1234567890';
 var errorAlertFN = document.createElement('p');
@@ -410,24 +410,48 @@ date.onfocus = function (){
 var buttonSignup = document.getElementsByClassName('button-Create')[0];
 buttonSignup.onclick = function (e){
     e.preventDefault();
+    var errorFields = [];
     if(vFName && vLName && vUserEmail && vPassword && vRepeatPassword
         && vDateOfB && vId && vPhone && vCountry && vAddress && vPostalCode){ 
-        alert("Employee created: \nFirst name: "+ fName.value + "\nLast name: " + lName.value +
-        "\nEmail: " + userEmail.value + "\nPassword: " + password.value + "\nPassword confirmed: " + repeatPassword.value +
-        "\nDate of birth: " + date.value + "\nDNI: " + id.value +  "\nTelephone: " + phone.value +
-        "\nCountry: " + country.value + "\nAddress: " + address.value +  "\nPostal code: " + postalCode.value);
+        alert('Employee created: \nFirst name: '+ fName.value + '\nLast name: ' + lName.value +
+        '\nEmail: ' + userEmail.value + '\nPassword: ' + password.value + '\nPassword confirmed: ' + repeatPassword.value +
+        '\nDate of birth: ' + date.value + '\nDNI: ' + id.value +  '\nTelephone: ' + phone.value +
+        '\nCountry: ' + country.value + '\nAddress: ' + address.value +  '\nPostal code: ' + postalCode.value);
     }else{
-        if(!vFName) alert("Invalid first name entered");
-        if(!vLName) alert("Invalid last name entered");
-        if(!vUserEmail) alert("Invalid email entered");
-        if(!vPassword) alert("Invalid password entered");
-        if(!vRepeatPassword) alert("Passwords didn't match");
-        if(!vDateOfB) alert("Invalid date of birth entered");
-        if(!vId) alert("Invalid DNI entered");
-        if(!vPhone) alert("Invalid telephone entered");
-        if(!vCountry) alert("Invalid locality entered");
-        if(!vAddress) alert("Invalid address entered");
-        if(!vPostalCode) alert("Invalid postal code entered");
+        if(!vFName){
+            errorFields.push('\nInvalid first name entered');
+        } 
+        if(!vLName){
+            errorFields.push('\nInvalid last name entered');
+        } 
+        if(!vUserEmail){
+            errorFields.push('\nInvalid email entered');
+        } 
+        if(!vPassword){
+            errorFields.push('\nInvalid password entered');
+        } 
+        if(!vRepeatPassword){
+            errorFields.push('\nPasswords did not match');
+        } 
+        if(!vDateOfB){
+            errorFields.push('\nInvalid date of birth entered');
+        } 
+        if(!vId){
+            errorFields.push('\nInvalid DNI entered');
+        } 
+        if(!vPhone){
+            errorFields.push('\nInvalid telephone entered');
+        }
+        if(!vCountry){
+            errorFields.push('\nInvalid country entered');
+        } 
+        if(!vAddress){
+            errorFields.push('\nInvalid address entered');
+        }
+        if(!vPostalCode){
+            errorFields.push('\nInvalid postal code entered');
+        }
+        alert('There are some errors: ' + '\n' + errorFields);
     }
 }
 }
