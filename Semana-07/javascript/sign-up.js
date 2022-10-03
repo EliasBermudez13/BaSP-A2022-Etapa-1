@@ -3,6 +3,7 @@ window.onload = function (){
 var fName = document.getElementById('first-name');
 var numsAndLetters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
 var letters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+var numbers = '1234567890';
 var errorAlertFN = document.createElement('p');
 var errorAlertLN = document.createElement('p');
 var errorAlertEmail = document.createElement('p');
@@ -74,11 +75,28 @@ userEmail.onfocus = function (){
     userEmail.nextElementSibling.classList.add('hide');
 }
     //address
+function addressValidationNum(){
+    for (i = 0; i < address.value.length; i++){
+        caracters = address.value[i];
+        if (numbers.indexOf(caracters) != -1){
+            return true;
+        }
+    }
+    return false;
+}   
+function addressValidationLet(){
+    for (i = 0; i < address.value.length; i++){
+        caracters = address.value[i];
+        if (letters.indexOf(caracters) != -1){
+            return true;
+        }
+    }
+    return false;
+}    
 var address = document.getElementById('address');
 var vAddress = false;
 address.onblur = function (){
     addressValue = address.value;
-    space = addressValue.indexOf(" ");
     if (addressValue == ''){
         address.classList.add('red-border');
         errorAlertAddress.innerHTML = 'Error: you must enter the Address';
@@ -86,9 +104,30 @@ address.onblur = function (){
         address.parentNode.insertBefore(errorAlertAddress, address.nextElementSibling);
         vAddress = false;
     }
-    else if (!allValidation(addressValue.substring(0,space), numsAndLetters, 5) && !allValidation(addressValue.substring(space +1), numsAndLetters, 1)){
+    else if( addressValue.length < 5){
         address.classList.add('red-border');
-        errorAlertAddress.innerHTML = 'Error: you must enter a valid Address';
+        errorAlertAddress.innerHTML = 'Error: you must enter a valid Address with 5 or more alphanumeric characters ';
+        errorAlertAddress.classList.remove('hide');
+        address.parentNode.insertBefore(errorAlertAddress, address.nextElementSibling);
+        vAddress = false;
+    }
+    else if ( !addressValue.includes(' ')){
+        address.classList.add('red-border');
+        errorAlertAddress.innerHTML = 'Error: your address must have: at least one space between';
+        errorAlertAddress.classList.remove('hide');
+        address.parentNode.insertBefore(errorAlertAddress, address.nextElementSibling);
+        vAddress = false;
+    }
+    else if (!addressValidationNum()){
+        address.classList.add('red-border');
+        errorAlertAddress.innerHTML = 'Error: your address must have: at least one number';
+        errorAlertAddress.classList.remove('hide');
+        address.parentNode.insertBefore(errorAlertAddress, address.nextElementSibling);
+        vAddress = false;
+    }
+    else if (!addressValidationLet()){
+        address.classList.add('red-border');
+        errorAlertAddress.innerHTML = 'Error: your address must have: at least one letter';
         errorAlertAddress.classList.remove('hide');
         address.parentNode.insertBefore(errorAlertAddress, address.nextElementSibling);
         vAddress = false;
@@ -183,7 +222,6 @@ function phoneValidation(value){
     }
     return true;
 }
-var numbers = '1234567890';
 var phone = document.getElementById('phone');
 var vPhone = false;
 phone.onblur = function (){
