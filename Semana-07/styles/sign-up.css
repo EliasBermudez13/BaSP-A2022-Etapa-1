@@ -60,3 +60,6 @@ p{
 .hide{
  display: none;
 }
+#date{
+   min-height: 20px;
+}

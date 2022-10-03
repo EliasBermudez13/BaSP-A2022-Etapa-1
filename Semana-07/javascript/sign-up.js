@@ -106,7 +106,7 @@ address.onfocus = function (){
 var password = document.getElementById('password');
 function passwordError() {
     password.classList.add('red-border');
-    errorAlertPass.innerHTML = 'Error: you must enter a valid password';
+    errorAlertPass.innerHTML = 'Error: your password must have 8 or more alphanumeric characters';
     errorAlertPass.classList.remove('hide');
     password.parentNode.insertBefore(errorAlertPass, password.nextElementSibling);
 } 
@@ -221,7 +221,7 @@ country.onblur = function (){
         country.parentNode.insertBefore(errorAlertCountry, country.nextElementSibling);
         vCountry = false;
     }
-    else if (!allValidation(country.value, numsAndLetters,3) && !allValidation(country.value, letters,3)){
+    else if (!allValidation(country.value, letters,3)){
         country.classList.add('red-border');
         errorAlertCountry.innerHTML = 'Error: you must enter a valid country';
         errorAlertCountry.classList.remove('hide');
@@ -235,7 +235,7 @@ country.onblur = function (){
 }
 country.onfocus = function (){
     country.classList.remove('red-border');
-    phone.nextElementSibling.classList.add('hide');
+    country.nextElementSibling.classList.add('hide');
 }
     //repeat Password
 var repeatPassword = document.getElementById('password-confirm')

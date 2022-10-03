@@ -67,11 +67,14 @@ buttonLogin.onclick = function (e){
     if (PasswordValidation(passwordValue, 8) && emailExpression.test (email)){
         alert('Username: ' + email + ' ' + 'Password: ' + passwordValue);
     }
+    else if (!emailExpression.test (email) && (!PasswordValidation(passwordValue, 8))){
+        alert("Invalid Username and Invalid Password")
+    }
     else {
         if (!emailExpression.test (email)){
             alert("Invalid Username");
         }
-        if (!PasswordValidation(passwordValue, numsAndLetters, 8)){
+        if (!PasswordValidation(passwordValue, 8)){
             alert("Invalid Password");
         }
     }
