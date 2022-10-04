@@ -392,17 +392,20 @@ window.onload = function (){
     var date = document.getElementById('date');
     var vDateOfB = false;
     date.value = localStorage.getItem('dob');
-    var date0 = date.value;
-    var [year, month, day] = date0.split('-');
-    var date1 = [month, day, year]. join('/');
+    function dateTransform(){
+        var date0 = date.value;
+        var [year, month, day] = date0.split('-');
+        var date1 = [month, day, year]. join('/');
+        return date1;
+    }
     function dateValidation(){
-        if (date.value.length != 10){
+    if (date.value != 10){
             return false;
         }
         return true;
     }
     date.onblur = function(){
-        if(!dateValidation()){
+        if(dateValidation()){
             date.classList.add('red-border');
             errorAlertDate.innerHTML = 'Error: you must enter a valid date of birth';
             errorAlertDate.classList.remove('hide');
@@ -419,17 +422,14 @@ window.onload = function (){
         date.nextElementSibling.classList.add('hide');
     }
     
-    
         //Button
     var buttonSignup = document.getElementsByClassName('button-Create')[0];
     buttonSignup.onclick = function (e){
         e.preventDefault();
-        var date0 = date.value;
-        var [year, month, day] = date0.split('-');
-        var date1 = [month, day, year]. join('/');
         var errorFields = [];
+        var freshData = dateTransform(date.value);
         var urlQP = 'https://basp-m2022-api-rest-server.herokuapp.com/signup?'+ 'name=' + fName.value + 
-        '&lastName=' + lName.value + '&dni=' + id.value + '&dob=' + date1 + 
+        '&lastName=' + lName.value + '&dni=' + id.value + '&dob=' + freshData + 
         '&phone='+ phone.value + '&address=' +address.value + '&city=' + country.value +
         '&zip=' + postalCode.value + '&email=' + userEmail.value + '&password=' + password.value;
         if(vFName && vLName && vUserEmail && vPassword && vRepeatPassword
@@ -446,12 +446,12 @@ window.onload = function (){
                 if (data.success){
                     alert('Employee created: \nFirst name: '+ fName.value + '\nLast name: ' + lName.value +
                     '\nEmail: ' + userEmail.value + '\nPassword: ' + password.value + '\nPassword confirmed: ' + repeatPassword.value +
-                    '\nDate of birth: ' + date1 + '\nDNI: ' + id.value +  '\nTelephone: ' + phone.value +
+                    '\nDate of birth: ' + freshData + '\nDNI: ' + id.value +  '\nTelephone: ' + phone.value +
                     '\nCountry: ' + country.value + '\nAddress: ' + address.value +  '\nPostal code: ' + postalCode.value);
                     localStorage.setItem('name', fName.value);
                     localStorage.setItem('lastName', lName.value);
-                    localStorage.setItem('dni', userEmail.value);
-                    localStorage.setItem('dob', date1);
+                    localStorage.setItem('dni', id.value);
+                    localStorage.setItem('dob', freshData);
                     localStorage.setItem('phone', phone.value);
                     localStorage.setItem('address', address.value);
                     localStorage.setItem('city', country.value);
