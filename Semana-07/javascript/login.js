@@ -64,8 +64,25 @@ buttonLogin.onclick = function (e){
     e.preventDefault();
     email = userEmail.value;
     passwordValue = password.value;
+    var urlQP = 'https://basp-m2022-api-rest-server.herokuapp.com/login?' +
+    'email=' + email + '&password=' + passwordValue;
     if (PasswordValidation(passwordValue, 8) && emailExpression.test (email)){
-        alert('Username: ' + email + ' ' + 'Password: ' + passwordValue);
+        fetch(urlQP)
+        .then((response) => {
+            if (response.status < 200 || response.status > 299) {
+              throw new Error('There is an error');
+            } 
+            return response.json()    
+          })
+        .then(function(data){
+            alert (data.msg);
+            if (data.success){
+                alert('Username: ' + email + ' ' + 'Password: ' + passwordValue);
+            }
+        })
+        .catch (function(error) {
+            alert(error);
+        })      
     }
     else if (!emailExpression.test (email) && (!PasswordValidation(passwordValue, 8))){
         alert("Invalid Username and Invalid Password")
